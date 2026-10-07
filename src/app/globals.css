@@ -1,0 +1,119 @@
+@import "tailwindcss";
+
+/* @font-face {
+  font-family: "Poppins";
+  src: url("/Fonts/Poppins-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("/Fonts/Poppins-Medium.ttf") format("truetype");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("/Fonts/Poppins-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("/Fonts/Poppins-Bold.ttf") format("truetype");
+  font-weight: 700;
+} */
+
+body {
+  /* font-family: "Poppins", sans-serif; */
+}
+
+.container {
+  max-width: 1340px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+.page-top-bg {
+  background-image: url("/bg-top.png");
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+  background: linear-gradient(
+    180deg,
+    #104fc8 0%,
+    #6baee6 24.04%,
+    #f1f6f8 35.1%,
+    #ffffff 39.42%,
+    #ffffff 84.13%
+  );
+}
+
+.page-bottom-bg {
+  background-image: url("/bg-bottom.png");
+
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+
+.button-order {
+  display: block;
+
+  padding: 16px 32px;
+  background: rgba(40, 70, 243, 1);
+  border-radius: 30px;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  text-align: center;
+  cursor: pointer;
+
+  transition: all 0.3s ease;
+  color: #fff;
+}
+
+.button-order:hover {
+  background: rgba(33, 59, 209, 1);
+}
+
+.button-cons {
+  padding: 16px 32px;
+  border: 1px solid var(--White, rgba(255, 255, 255, 1));
+  border-radius: 30px;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.button-cons:hover {
+  background: rgba(106, 167, 227, 1);
+}
+@media (max-width: 600px) {
+  .container{
+    padding: 0 16px;
+  }
+  .page-top-bg {
+    background: linear-gradient(
+      #104fc8 0%,
+      #d6ecff 24.04%,
+      #ffffff 35.1%,
+      #fff 39.42% 84.13%
+    );
+  }
+  .page-bottom-bg {
+    background-image: none;
+    background: transparent;
+    background-size: contain;
+  }
+  .page-top-bg {
+    background: transparent;
+    background-image: none;
+  }
+}
